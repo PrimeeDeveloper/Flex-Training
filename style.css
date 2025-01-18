@@ -1,0 +1,155 @@
+body {
+    font-family: helvetica;
+    margin: 0;
+    padding: 0;
+}
+
+/* LATIHAN 1 */
+.container-satu {
+    max-width: 800px;
+    background-color: #00ffff2f;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    margin-bottom: 150px;
+}
+
+.wrapper.artikel {
+    flex: 3;
+    order: 2;
+}
+
+.wrapper.kolom1 {
+    flex: 1;
+    order: 1;
+}
+
+.wrapper.kolom2 {
+    flex: 1;
+    order: 3;
+}
+
+
+/* LATIHAN 1 END */
+
+/* LATIHAN 2 */
+.container-dua {
+    max-width: 800px;
+    margin: 50px auto 150px;
+}
+
+.layanan {
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.layanan.satu {
+    background-color: #ffa6a6;
+}
+
+.layanan.dua {
+    background-color: #ffffb4;
+}
+
+.layanan.tiga {
+    background-color: #bcffbc;
+}
+/* LATIHAN 2 END */
+
+/* LATIHAN 3 */
+.container-tiga {
+    display: flex;
+    margin: 50px auto 150px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 50%;
+    margin: 5px;
+}
+
+.thumbnail img{
+    width: 100%;
+}
+/* LATIHAN 3 END */
+
+/* LATIHAN 4 */
+.container-empat {
+    max-width: 800px;
+    margin: 50px auto 150px;
+}
+
+.card {
+    border: 3px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+}
+
+.card .header {
+    height: 150px;
+    background-color: brown;
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* LATIHAN 4 END */
+
+/* LATIHAN 5 */
+.container-lima {
+    width: 300px;
+    height: 300px;
+    border: 5px solid red;
+    margin: 50px auto;
+    display: flex;
+}
+
+.kotak {
+    background-color: #bcffbc;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+}
+
+.kotak span {
+    margin: auto;
+}
+/* LATIHAN 5 END */
+
+/* RENSPONSIF */
+@media ( min-width: 600px ) {
+    .container-satu {
+        display: flex;
+        height: 100vh;
+    }
+
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .layanan {
+        width: 30%;
+    }
+
+    .thumbnail {
+        width: 25%;
+    }
+
+    .container-empat {
+        display: flex;
+    }
+
+    .card.besar {
+        transform: scale(1.12);
+    }
+}
